@@ -1,0 +1,23 @@
+№1
+Ввести из консоли число. Вывести все делители числа и четное оно или нет.
+
+import 'dart:io';
+
+void main() {
+  print('Введите X:');
+  var x = int.parse(stdin.readLineSync() ?? '0');
+  int i = 1;
+  do{
+    if(x % i ==0) {
+      print(i);
+    }
+    i+=1;
+  }
+  while (i < x);
+  if (x % 2 == 0) {
+    print('\nчетное');
+  }
+    else{
+    print('\nнечетное');
+  }
+}

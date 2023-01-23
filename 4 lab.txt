@@ -1,0 +1,18 @@
+Удалить все повторяющиеся слова из строки
+
+void main() {
+  List<Shoes> objets = [Shoes("Boots"), Shoes("Boots"),Shoes("Snickers"), Shoes("Sandals")];
+
+  List <String> atributs = [];
+  objets.forEach((element){
+    atributs.add(element.name);
+  });
+
+  List<String> noDuplicates = atributs.toSet().toList();
+  print(noDuplicates);
+}
+
+class Shoes{
+  final String name;
+  Shoes(this.name);
+}

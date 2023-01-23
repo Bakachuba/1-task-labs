@@ -1,0 +1,23 @@
+Из двух списков сделать третий, в который состоит из повторяющихся чисел
+
+void main() {
+
+  List<String> city = [
+    "SuperNova", 
+    "SuperNova", 
+    "Bransbro",
+    "Plotd",
+    "Plotd",
+    "Kingdom",
+    "Wark",
+];
+List DupCity = [];
+city.forEach((dup){
+if(DupCity.contains(dup)){
+print("Duplicate in List= ${dup}");
+}
+else{
+  DupCity.add(dup);
+}
+});
+}
